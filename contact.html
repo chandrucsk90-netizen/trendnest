@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | TrendNest</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-bag-shopping"></i>
+TrendNest
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Contact TrendNest</h1>
+
+<p>
+We're here to help! If you have questions, suggestions,
+or business enquiries, feel free to contact us.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Get In Touch</h2>
+
+<div style="max-width:700px;margin:auto;background:#fff;padding:40px;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,.08);">
+
+<form id="contactForm">
+
+<div style="margin-bottom:20px;">
+
+<label><strong>Full Name</strong></label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required
+style="width:100%;padding:15px;border:1px solid #ccc;border-radius:8px;margin-top:8px;">
+
+</div>
+
+<div style="margin-bottom:20px;">
+
+<label><strong>Email Address</strong></label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required
+style="width:100%;padding:15px;border:1px solid #ccc;border-radius:8px;margin-top:8px;">
+
+</div>
+
+<div style="margin-bottom:20px;">
+
+<label><strong>Subject</strong></label>
+
+<input
+type="text"
+id="subject"
+placeholder="Subject"
+style="width:100%;padding:15px;border:1px solid #ccc;border-radius:8px;margin-top:8px;">
+
+</div>
+
+<div style="margin-bottom:20px;">
+
+<label><strong>Message</strong></label>
+
+<textarea
+id="message"
+rows="6"
+placeholder="Write your message..."
+required
+style="width:100%;padding:15px;border:1px solid #ccc;border-radius:8px;margin-top:8px;"></textarea>
+
+</div>
+
+<button
+type="submit"
+class="btn">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact Information</h2>
+
+<div class="why-grid">
+
+<div>
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>support@trendnest.com</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-globe"></i>
+
+<h3>Website</h3>
+
+<p>www.trendnest.com</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>Support</h3>
+
+<p>Monday - Saturday</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Location</h3>
+
+<p>India</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<h2>TrendNest</h2>
+
+<p>Discover Smart Choices Every Day</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-youtube"></i>
+
+</div>
+
+<p>© 2026 TrendNest. All Rights Reserved.</p>
+
+<p>
+As an Amazon Associate, we earn from qualifying purchases.
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting TrendNest. We will get back to you soon.");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>

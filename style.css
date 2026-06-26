@@ -1,0 +1,363 @@
+/* ===========================
+   TrendNest - style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#222;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#1565c0;
+}
+
+.logo i{
+    color:#ff9800;
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#1565c0;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:#fff;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    max-width:100%;
+    max-height:420px;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff9800;
+    color:#fff;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ef6c00;
+    transform:translateY(-3px);
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:45px;
+}
+
+/* ================= CATEGORY ================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:18px;
+    text-align:center;
+    padding:35px 20px;
+    font-size:50px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.category-card h3{
+    margin-top:18px;
+    font-size:20px;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+}
+
+/* ================= SEARCH ================= */
+
+.search-section{
+    display:flex;
+    justify-content:center;
+}
+
+#searchBox{
+    width:100%;
+    max-width:700px;
+    padding:15px 20px;
+    border-radius:50px;
+    border:2px solid #ddd;
+    font-size:17px;
+    outline:none;
+}
+
+#searchBox:focus{
+    border-color:#1565c0;
+}
+
+/* ================= PRODUCTS ================= */
+
+#product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#1565c0;
+    font-size:22px;
+    font-weight:700;
+    margin:12px 0;
+}
+
+.buy-btn{
+    display:block;
+    text-align:center;
+    background:#ff9800;
+    color:#fff;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:#ef6c00;
+}
+
+/* ================= WHY ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.why-grid div{
+    background:#fff;
+    text-align:center;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.why-grid i{
+    font-size:40px;
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+    text-align:center;
+    background:#1565c0;
+    color:#fff;
+}
+
+.newsletter p{
+    margin:20px 0;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    padding:15px;
+    width:350px;
+    border:none;
+    border-radius:50px;
+}
+
+.newsletter button{
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    background:#ff9800;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.social{
+    margin:20px 0;
+}
+
+.social i{
+    font-size:24px;
+    margin:0 12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    color:#ff9800;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.newsletter input{
+    width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-text h1{
+    font-size:30px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+}
